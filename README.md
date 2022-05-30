@@ -7,7 +7,7 @@ Your task is to render the list of recipes, and filter them by cuisine. The filt
    ```shell
      npm i @apollo/client graphql
    ```
-3. In `index.js`, import the following: `import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"`;
+3. In `index.ts`, import the following: `import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"`;
 4. Create an instance of `ApolloClient` called `client`, pass it an object. The first property is `uri`, pass it your API. The second property is `cache`, pass it an instance of `InMemoryCache`.
 5. Wrap your `App` component with `ApolloProvider`, and pass it `client` as a prop.
 
@@ -18,7 +18,7 @@ Your task is to render the list of recipes, and filter them by cuisine. The filt
 We prepared `RecipeList` and `RecipeCard` components for you.
 
 1. Create a `graphQL` folder and inside it create a file called `queries.ts`.
-2. In this file, import gql: `import {gql} from @apollo/client`.
+2. In this file, import gql: `import {gql} from "@apollo/client"`.
 3. Create a new query that will fetch all recipes. What fields do you think we need?
 4. Create a new folder called `models`, inside it create two files: `index.ts` and `recipe.ts`.
 5. In `models` create an interface for a `Recipe`, and an interface called `Recipes` that has an array for `Recipe`.
