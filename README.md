@@ -22,9 +22,12 @@ We prepared `RecipeList` and `RecipeCard` components for you.
 3. Create a new query that will fetch all recipes. What fields do you think we need?
 4. Create a new folder called `models`, inside it create two files: `index.ts` and `recipe.ts`.
 5. In `models` create an interface for a `Recipe`, and an interface called `Recipes` that has an array for `Recipe`.
-6. Export both interfaces and export everything inside it in `index.js`.
+6. Export both interfaces and export everything inside it in `index.ts`.
+7. In recipe list call your recipes query and map your data.
+8. Don't forget to add conditions for the loading and error.
 
 ### Cuisine List
 
 1. In `queries.ts`, create a new query that will fetch all cuisines. What fields do you think we need?
-2. Render
+2. Render a dropdown list that has a list of all the cuisines.
+3. When clicking on one of the cuisines, the get recipes query should be triggered again to only fetch the recipes from the category.
